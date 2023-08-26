@@ -16,6 +16,6 @@ Some important documenation or references:
 
 * https://weberblog.net/ntp-server-via-dcf77-on-a-raspberry-pi/
 
-* https://pi4j.com/1.2/pins/model-b-rev1.html
+* https://pi4j.com/1.2/pins/model-b-plus.html
 
 * https://en.wikipedia.org/wiki/DCF77
