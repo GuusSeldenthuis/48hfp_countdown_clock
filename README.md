@@ -10,7 +10,7 @@ A digital count-down clock used during 48h projects.
 
 ## Links
 
-Some important documenation or references:
+Some important documentation or references:
 
 ### DCF77 module
 

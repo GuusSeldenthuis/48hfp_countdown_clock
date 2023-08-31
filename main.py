@@ -1,14 +1,17 @@
-import ntplib
+from ntplib import *
 from time import ctime
 
+ntp_client = NTPClient()
+attempts = 0
 
-def print_time():
-    ntp_client = ntplib.NTPClient()
-    response = ntp_client.request('pool.ntp.org')
-    print (ctime(response.tx_time))
+while attempts < 3:
+    try:
+        response = ntp_client.request('pool.ntp.org')
+        print (ctime(response.tx_time))
+        break
+    except:
+        attempts += 1
+        print('Fetching ntp failed.')
 
-
-if __name__ == '__main__':
-    print_time()
-
-print(1337);
+times_file = open('times.txt', 'r')
+times = times_file.readlines()
